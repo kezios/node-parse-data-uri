@@ -27,7 +27,7 @@ describe('parse-data-uri', () => {
     }
 
     const parsed = parseDataUri(testFile) as CustomParsed;
-    expect(parsed.name).toBe('test');    
+    expect(parsed.name).toBe('test file.gif');    
     
   })
 

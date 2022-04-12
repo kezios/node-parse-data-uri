@@ -1,11 +1,12 @@
 {
   "name": "@kezios/parse-data-uri",
   "author": "JustinMartinDev <justin.martin@kezios.fr>",
+  "private": false,
   "contributors": [
     "jden <jason@denizac.org>",
     "JustinMartinDev <justin.martin@kezios.fr>"
   ],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "parse a data uri into mime type and buffer",
   "keywords": [
     "mime",
@@ -29,14 +30,14 @@
     "data-uri-to-buffer": "4.0.0"
   },
   "devDependencies": {
-    "jest": "27.5.1",
-    "ts-jest": "^27.1.3",
-    "typescript": "^4.6.2",
-    "prettier": "^2.6.0",
     "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "eslint": "^8.11.0",
-    "eslint-plugin-jest": "^26.1.1"
+    "eslint-plugin-jest": "^26.1.1",
+    "jest": "27.5.1",
+    "prettier": "^2.6.0",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2"
   }
 }

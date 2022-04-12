@@ -11,7 +11,7 @@ const parseDataUri = (dataUri: string): ParsedUri => {
   const uriObject: Record<string, string> = {};
 
   uriData.forEach((element: string)=>{
-    uriObject[element.split('=')[0]] = element.split('=')[1];
+    uriObject[element.split('=')[0]] = decodeURI(element.split('=')[1]);
   })
   
 
