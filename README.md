@@ -1,45 +1,33 @@
-# parse-data-uri
-parse a data uri into mime type and buffer
+# Parse Data Uri 
 
-## usage
+Parse a data uri into mime type and buffer. Typescript version of `junosuarez/node-parse-data-uri` with additionals data parsing.
+
+## Installation
+```bash
+yarn add @kezios/parse-data-uri
+```
+## Usage
 ```js
-var parseDataUri = require('parse-data-uri')
+import parseDataUri from '@kezios/parse-data-uri'
 
-var dataUri = 'data:image/jpeg;base64,23423423...'
+const dataUri = 'data:image/jpeg;name=MyName.png;base64,23423423...'
 
-var parsed = parseDataUri(dataUri)
+const parsed = parseDataUri(dataUri)
 
 console.log(parsed)
 // {
 //   mimeType: 'image/jpeg',
-//   data: Buffer < 00 00 00 ... > 
+//   data: Buffer < 00 00 00 ... >,
+//   name: 'MyName'
 // }
-
 ```
-
-
-## api
-###`parseDataUri : ( dataUri: String ) => {mimeType: String, data: Buffer}`
-
-## installation
-
-    $ npm install parse-data-uri
-
-
-## running the tests
-
-From package root:
-
-    $ npm install
-    $ npm test
-
-
-Special thanks to @tootallnate for writing [data-uri-to-buffer](https://npm.im/data-uri-to-buffer)
 
 ## contributors
 
-- jden <jason@denizac.org>
 
+Special thanks to :
+ - @tootallnate for writing [data-uri-to-buffer](https://npm.im/data-uri-to-buffer)
+ - @jden for the original version [parse-data-uri](https://github.com/junosuarez/node-parse-data-uri)
 
 ## license
 
