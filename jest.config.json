@@ -1,0 +1,22 @@
+{
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(t|j)s$",
+  "moduleFileExtensions": ["ts", "js", "json", "node"],
+  "preset": "ts-jest",
+  "globals": {
+    "ts-jest": {
+      "diagnostics": false,
+      "isolatedModules": true,
+      "tsconfig": {
+        "allowJs": true
+      }      
+    }
+  },
+  "verbose": false,
+  "testEnvironment": "node",
+  "transformIgnorePatterns": [
+    "<rootDir>/node_modules/?!(data-uri-to-buffer)"
+  ]
+}
