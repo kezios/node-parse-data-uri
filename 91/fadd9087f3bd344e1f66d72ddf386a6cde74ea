@@ -1,0 +1,21 @@
+.github/workflows/npm-publish.yml
+  s_b0a3aa894d0cf0::t_91cb5641ea2e9c 14-15,27-28,43
+.github/workflows/required-ci.yml
+  s_b0a3aa894d0cf0::t_91cb5641ea2e9c 26,31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "91fadd9087f3bd344e1f66d72ddf386a6cde74ea",
+  "prompts": {},
+  "sessions": {
+    "s_b0a3aa894d0cf0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a04770-2ec9-7a71-a07e-3307b79d0a4a",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Alexandre Fauchard <alexandre.fauchard@toolpad.fr>"
+    }
+  }
+}
